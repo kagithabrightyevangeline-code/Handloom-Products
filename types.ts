@@ -8,3 +8,12 @@ export interface Design {
   imageMimeType: string;
   pitch?: string; // Optional AI-generated pitch
 }
+
+export interface MatchResult {
+  matchedDesignId: string;
+  justification: string;
+  platformRecommendations: {
+    platformName: string;
+    reason: string;
+  }[];
+}
